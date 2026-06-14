@@ -10,40 +10,84 @@
 
 <body>
 
-<header>
-<h1>ResizeKB</h1>
-<p>Resize Images to Exact KB Online</p>
+<header class="site-header">
+  <h1>ResizeKB</h1>
+  <p>Resize Images to Exact KB Online</p>
 </header>
 
-<div class="container">
+<section class="hero">
+  <h2>Resize Images to Exact KB Online</h2>
+  <p>Resize photos to 20KB, 50KB, 100KB and 200KB instantly.</p>
+</section>
 
-<input type="file" id="imageInput">
+<main class="container">
 
-<select id="targetSize">
-<option value="20">20 KB</option>
-<option value="50">50 KB</option>
-<option value="100" selected>100 KB</option>
-<option value="200">200 KB</option>
-</select>
+  <div class="tool-card">
+    <input type="file" id="imageInput" accept="image/*">
 
-<button id="resizeBtn">Resize Image</button>
+    <select id="targetSize">
+      <option value="20">20 KB</option>
+      <option value="50">50 KB</option>
+      <option value="100" selected>100 KB</option>
+      <option value="200">200 KB</option>
+    </select>
 
-<div id="result">
-  <p>Original Size: <span id="originalSize"></span></p>
-  <p>Target Size: <span id="targetOutput"></span></p>
-  <p>Output Size: <span id="newSize"></span></p>
-  <p id="statusText"></p>
+    <button id="resizeBtn">Resize Image</button>
 
-  <img id="preview" alt="Resized Image Preview">
+    <div id="result">
+      <p>Original Size: <span id="originalSize"></span></p>
+      <p>Target Size: <span id="targetOutput"></span></p>
+      <p>Output Size: <span id="newSize"></span></p>
+      <p id="statusText"></p>
 
-  <br>
+      <img id="preview" alt="Resized Image Preview">
 
-  <a id="downloadBtn">Download Image</a>
-</div>
+      <br>
 
-</div>
+      <a id="downloadBtn">Download Image</a>
+    </div>
+  </div>
+
+  <section class="popular-tools">
+    <h2>Popular Tools</h2>
+
+    <div class="tool-grid">
+      <a href="#" class="small-card">Resize Image to 20KB</a>
+      <a href="#" class="small-card">Resize Image to 50KB</a>
+      <a href="#" class="small-card">Resize Image to 100KB</a>
+      <a href="#" class="small-card">Resize Image to 200KB</a>
+    </div>
+  </section>
+
+  <section class="seo-section">
+    <h2>How to Resize Image to 100KB?</h2>
+    <ol>
+      <li>Upload your image.</li>
+      <li>Select target size like 20KB, 50KB, 100KB or 200KB.</li>
+      <li>Click on Resize Image button.</li>
+      <li>Download your compressed image.</li>
+    </ol>
+  </section>
+
+  <section class="faq-section">
+    <h2>FAQ</h2>
+
+    <h3>Is ResizeKB free?</h3>
+    <p>Yes, ResizeKB is free to use.</p>
+
+    <h3>Is my image uploaded to server?</h3>
+    <p>No, image processing happens inside your browser.</p>
+
+    <h3>Can I resize image under 100KB?</h3>
+    <p>Yes, you can resize images under 20KB, 50KB, 100KB and 200KB.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 ResizeKB. All rights reserved.</p>
+</footer>
 
 <script src="assets/js/app.js"></script>
-
 </body>
 </html>
