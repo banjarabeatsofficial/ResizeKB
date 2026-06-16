@@ -162,3 +162,13 @@ footer {
     padding: 20px;
   }
 }
+.logo{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+}
+
+.logo img{
+border-radius:8px;
+}
